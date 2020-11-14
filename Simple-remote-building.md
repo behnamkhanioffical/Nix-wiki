@@ -44,7 +44,11 @@ CAUTION: if you're using current unstable/flake-powered Nix without https://gith
 don't set `nix.sandboxPaths`, but set
 `sandbox-paths = /bin/sh=${pkgs.busybox-sandbox-shell}/bin/busybox /run/binfmt/aarch64=${qemu-aarch64-static}/bin/qemu-aarch64-static` instead.
 
-# Android side
+# Android
+
+Command-line: use `--builders`, e.g.,  `nix-on-droid switch --builders ssh-ng://USER@HOST'.
+
+Configuration:
 
 ```
 mkdir -p ~/.config/nix
