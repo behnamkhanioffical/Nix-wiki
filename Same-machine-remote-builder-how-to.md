@@ -4,7 +4,7 @@ This write-up just serves as a proof of concept and is by no means complete or i
 
 The [remote builder](Use-a-remote-builder-with-qemu) wiki page already describes how to bridge the gap between different architectures when sourcing out the build.
 
-One additional question I had in mind when trying what I describe next was how to have that remote machine the above linked wiki entry mentions (remote builder) hosting the build in a vm, thus not neccessarily leaving the local machine i. e. physical device I am on at all.
+One additional question I had in mind when trying what I describe next was how to have that remote machine the above linked wiki entry mentions ([remote builder](Use-a-remote-builder-with-qemu)) hosting the build in a vm, thus not neccessarily leaving the local machine i. e. physical device I am on at all. What's important here, is that probably you have everything I do for free already following [the article](Use-a-remote-builder-with-qemu) if your machine is running some Linux-Distribution directly. I am on a Windows OS setup so these additional steps seem to be needed at this time.
 
 Latter which setup is of advantage if you're on a network with restricted routing (i. e. connected to an enterprise network via Cisco AnyConnect, search `cisco vpn split tunneling` if you want to know more about). Also the local machine can basically run any OS capable of hosting nix, so doesn't neccessarily need to run NixOS. For example I'm using nix deployed on arch linux via WSL on Windows 10 for this (`Linux 4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020 x86_64 GNU/Linux`).
 
