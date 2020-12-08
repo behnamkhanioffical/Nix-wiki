@@ -1,11 +1,14 @@
 DISCLAIMER!
 This write-up just serves as a proof of concept and is by no means complete or intended for production use. Pls don't hesitate to ask the op in case of questions or findings.
 
+
 The [remote builder](Use-a-remote-builder-with-qemu) wiki page already describes how to bridge the gap between different architectures when sourcing out the build.
 
-One additional question I had in mind when trying what I describe next was how to have that remote machine hosting the aarch64 build in a vm, thus not neccessarily leaving the local machine at all. Latter which is of advantage if your on a network with restricted routing (i. e. via Cisco AnyConnect). Also the local machine can basically run any OS capable of hosting nix, so doesn't need to run NixOS. I'm using nix in an arch linux via WSL (not WSL2) on Windows 10 for this (`Linux 4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020 x86_64 GNU/Linux`).
+One additional question I had in mind when trying what I describe next was how to have that remote machine the above linked wiki entry mentions (remote builder) hosting the build in a vm, thus not neccessarily leaving the local machine i. e. physical device I am on at all.
 
-I'll show you and recommend the approach using [nixos-shell](https://github.com/Mic92/nixos-shell).
+Latter which setup is of advantage if you're on a network with restricted routing (i. e. connected to an enterprise network via Cisco AnyConnect, search `cisco vpn split tunneling` if you want to know more about). Also the local machine can basically run any OS capable of hosting nix, so doesn't neccessarily need to run NixOS. For example I'm using nix deployed on arch linux via WSL on Windows 10 for this (`Linux 4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020 x86_64 GNU/Linux`).
+
+I'll show you now and recommend the approach the set up the whole thing using [nixos-shell](https://github.com/Mic92/nixos-shell).
 
 Once you cloned nixos-shell (my patches are based on commit cac57fac668ee3849276531bd1f03604ed568dd0) please patch `Makefile` and `examples/vm.nix`
 
