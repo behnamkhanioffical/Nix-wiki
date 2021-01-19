@@ -96,3 +96,16 @@ do
 nix-build --expr '(with import <nixpkgs> { }; runCommand "foo" {} "env > $out")' --option system aarch64-linux --option sandbox false --extra-platforms aarch64-linux
 #cat /nix/store/<generated-store-path>-foo
 ```
+
+# Troubleshooting
+
+In case you get similar errors:
+
+>while setting up the build environment: executing '/nix/store/hg1plgwh2439jr117s5648fmgrvyc4kn-bootstrap-tools/bin/bash': Exec format error
+
+look more further up the error log if there is:
+
+>ED25519 host key for [localhost]:2222 has changed and you have requested strict checking.
+Host key verification failed.
+
+If so disable it either via `-o UserKnownHostsFile=/dev/null` and accepting the changed key or by adding `StrictHostKeyChecking no` to the host entry in `/~.ssh/config`. Probably you need to remove old host entries from the `~/.ssh/known_hosts `as well.
