@@ -1,3 +1,7 @@
+# Setup and start sshd
+
+## Manual setup
+
 For now you can follow these steps to create a working sshd server:
 
 1. Install `openssh` via `nix-env` or `nix-on-droid`
