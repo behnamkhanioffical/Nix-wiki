@@ -1,11 +1,17 @@
+# New way of host configuration
+
+Just `boot.binfmt.emulatedSystems = [ "aarch64-linux" ];` is enough
+
+# Old way of host configuration
+
 Building remotely with qemu-user-aarch64,
 using a prebuilt qemu user emulation binary.
 
-# Prerequisites:
-1. a powerful NixOS 20.09 x86_64 machine
+## Prerequisites:
+1. a powerful NixOS 21.09 x86_64 machine
 2. that you can ssh to using `ssh HOST` without passwords (e.g., with a passwordless key).
 
-# Builder
+## Builder
 
 Add the following to the system configuration:
 
