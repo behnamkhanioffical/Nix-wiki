@@ -1,2 +1,2 @@
 * `tracepath` (`nixpkgs.iputils`) traceroutes OK without root privileges
-* `qemu-system-aarch64` (`nixpkgs.qemu_kvm`) can at least boot a Debian aarch64 installer (using [TCG](https://qemu.readthedocs.io/en/latest/devel/multi-thread-tcg.html), I don't have KVM)
+* `qemu-system-aarch64` (`nixpkgs.qemu_kvm`) can at least boot a Debian aarch64 installer (using [TCG](https://qemu.readthedocs.io/en/latest/devel/multi-thread-tcg.html), I don't have KVM) - also see [similar example](/Mic92/nixos-shell/issues/52#issuecomment-1072859595)
