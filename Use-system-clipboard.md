@@ -1,0 +1,3 @@
+https://github.com/t184256/nix-on-droid/labels/android%20expertise%20needed lists some tickets that request clipboard features suggesting termux-clipboard as a workaround latter which progress is blocked for obvious reasons.
+
+Ppl like me who can't wait or didn't know yet can also use i. e. nvim with an osc52 plugin to have at least that feature: copy from nix-on-droid to android's clipboard. For a possible setup follow [these instructions](https://github.com/ojroques/nvim-osc52/blob/27b922a88aba9b2533c4a0e0bc5bca65e3405739/README.md#using-nvim-osc52-as-clipboard-provider).
