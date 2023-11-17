@@ -1,3 +1,9 @@
+# Recommended way
+
+The font needs to be a single TTF file. The recommended way to set it is via the configuration option: https://nix-community.github.io/nix-on-droid/nix-on-droid-options.html#opt-terminal.font
+
+# Historical notes preserved for the reference
+
 (taken from https://github.com/t184256/nix-on-droid/issues/120#issuecomment-867219785)
 
 TL;DR: you can set one font, drop it into `~/.termux/font.ttf`
